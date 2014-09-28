@@ -14,6 +14,9 @@ section {
 	height: 100vh;
 	overflow: hidden; // contain scenes
 	position: relative;
+
+	max-width: 1600px;
+	margin: auto;
 }
 
 .spacer {
@@ -316,14 +319,23 @@ section {
 
 	.copy {
 		border: 2px solid #6E96BB;
+		border-radius: 10px;
 		color: #6E96BB;
-		padding: 2em;
-		width: 350px;
 		position: fixed;
-		right: 150px;
+		left: 1000px;
 		top: 100px;
 		font-size: 22px;
 		text-align: center;
+
+		&.intro {
+			padding: 2em;
+			width: 350px;
+		}
+
+		&.on-device {
+			padding: 1em;
+			width: auto;
+		}
 	}
 
 }
