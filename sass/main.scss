@@ -1,0 +1,328 @@
+body {
+	min-height: 2000px;
+	box-sizing: border-box;
+	width: 100%;
+	height: 100%;
+}
+
+* {
+	box-sizing: inherit;
+}
+
+section {
+	width: 100vw;
+	height: 100vh;
+	overflow: hidden; // contain scenes
+	position: relative;
+}
+
+.spacer {
+	margin-top: 0.25vh;
+	width: 100%;
+}
+
+.trigger {
+	width: 100%;
+	height: 1px;
+	background: red;
+}
+
+#hello {
+
+	.name-tag {
+
+		position: relative;
+		
+		left: 50%;
+		margin-left: -300px;
+		width: 600px;
+
+		top: 40%;
+		margin-top: -175px;
+		height: 350px;
+
+		box-shadow: 1px 5px 5px rgba(#000, 0.1);
+		border-radius: 25px;
+		border: 5px solid red;
+		overflow: hidden; // hides anything that exceeds the rounded corners
+
+		header {
+			background-color: red;
+			font-size: 25px;
+			h1, h2 {
+				color: #fff;
+				margin: 0;
+				padding: 5px;
+				text-align: center;
+			}
+		}
+
+		.name-wrapper {
+			
+			width: 100%;
+			text-align: center;
+
+			.name {
+				margin-top: 2em;
+				position: absolute;
+				width: 100%;
+				overflow: hidden;
+			}
+
+			.letter {
+				font-size: 140px;
+				display: inline-block;
+				position: relative;
+				top: 2em;
+			}
+		}
+	}
+}
+
+#build {
+
+	background: #94D0BC;
+
+	.gears {
+		padding-top: 25vh;
+		text-align: center;
+	}
+
+	.gear {
+		width: 25vh;
+		height: 25vh;
+		margin-right: -6.5vh;
+		background-size: 100%;
+		display: inline-block;
+
+		&:nth-child(2n) {
+			transform: rotate(22deg);
+		}
+
+		&:last-child {
+			margin-right: 0;
+		}
+
+		// svg styling
+		path {
+			fill: #C4E0AC;
+		}
+	}
+
+	.copy {
+		width: 100%;
+		left: -150%;
+		position: absolute;
+		text-align: center;
+		line-height: 25vh;
+		font-size: 15vh;
+		white-space: nowrap;
+	}
+
+	.container {
+		max-height: 750px;
+	}
+}
+
+#responsive {
+
+	min-height: 10000px;
+	position: relative;
+
+	$apple-silver: #e8eaef;
+	$apple-black: #3b404a;
+
+	.webpage-wrapper {
+		position: absolute;
+	}
+
+	.webpage {
+
+		position: absolute;
+		border: 2px solid black;
+		width: 50vw;
+		height: 450px;
+		// min-width: 150px;
+		background-color: #CBE9FC;
+		overflow: hidden;
+		box-sizing: border-box;
+		transform-origin: 0 0 0;
+		transition: border-radius 0.5s ease;
+		
+
+		.container {
+			margin: 0 auto;
+			width: 100%;
+			background-color: #fff;
+			max-width: 400px;
+			padding: 2%;
+			box-shadow: 0px 0px 10px -2px #000;
+			text-align: center;
+			transition: padding 0.5s ease;
+		}
+
+		.logo {
+			background-color: #88BEBE;
+			height: 100px;
+			width: 100%;
+		}
+
+		ul.menu {
+
+			list-style: none;
+			height: 30px;
+			margin: 5% 1%;
+			padding: 0;
+
+			li {
+				width: 15%;
+				height: 100%;
+				background: #6E96BB;
+				display: inline-block;
+			}
+		}
+
+		.box {
+			width: 100px;
+			height: 100px;
+			background-color: #F0D9B4;
+			display: inline-block;
+			margin-right: 1%;
+			margin-left: 1%;
+		}
+
+		.text {
+			padding: 5% 20%;
+		}
+
+		.row-text {
+			padding-top: 5%;
+			border-bottom: 2px solid #898266;
+		}
+
+		&.ipad-width {
+			
+			.container {
+				padding-top: 32px;
+			}
+			
+			.logo { 
+				height: 50px; 
+			}
+			ul.menu {
+				height: 15px;
+			}
+		}
+
+		&.imac-width {
+			.container {
+				padding-top: 36px;
+			}
+		}
+
+		&.iphone-width {
+
+			border-radius: 10px;
+
+			.logo {
+				height: 50px;
+				&:after {
+					display: inline-block;
+					float: right;
+					content: '☰';
+					margin-top: 1.5em;
+					margin-right: 10px;
+					font-size: 1.1em;
+					color: #fff;
+				}
+			}
+
+			.box {
+				display: none;
+			}
+
+			ul.menu {
+				display: none;
+			}
+		}
+
+		&.ipad-width, &.imac-width {
+			border-radius: 10px;
+		}
+	}
+
+	.ipad-wrapper, .imac-wrapper, .iphone-wrapper {
+		position: fixed;
+		top: 0;
+		left: 0;
+	}
+
+	.imac {
+
+		width: 690px;
+		height: 420px;
+		border: 32px solid $apple-black;
+		content: '';
+		display: block;
+		position: relative;
+		border-top-left-radius: 10px;
+		border-top-right-radius: 10px;
+		transform-origin: 0 0 0;
+
+		&:after {
+			width: 690px;
+			position: absolute;
+			top: 388px;
+			height: 70px;
+			background: $apple-silver;
+			display: block;
+			content: '';
+			left: -32px;
+
+			border-bottom-left-radius: 10px;
+			border-bottom-right-radius: 10px;
+		}
+	}
+
+	.ipad {
+
+		border-radius: 10px;
+		background: transparent;
+		width: 240px;
+		border-left: 16px solid $apple-black;
+		border-right: 16px solid $apple-black;
+		height: 320px;
+		border-top: 36px solid $apple-black;
+		border-bottom: 36px solid $apple-black;
+
+		box-sizing: border-box;
+
+		transform-origin: 0 0 0;
+	}
+
+	.iphone {
+		width: 104px;
+		height: 184px;
+		border-left: 8px solid $apple-black;
+		border-right: 8px solid $apple-black;
+		border-top: 32px solid $apple-black;
+		border-bottom: 32px solid $apple-black;
+		border-radius: 10px;
+		box-sizing: border-box;
+
+		transform-origin: 0 0 0;
+	}
+
+	.copy {
+		border: 2px solid #6E96BB;
+		color: #6E96BB;
+		padding: 2em;
+		width: 350px;
+		position: fixed;
+		right: 150px;
+		top: 100px;
+		font-size: 22px;
+		text-align: center;
+	}
+
+}

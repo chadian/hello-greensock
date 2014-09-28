@@ -1,220 +1,309 @@
-/*! HTML5 Boilerplate v4.3.0 | MIT License | http://h5bp.com/ */
-
-html,
-button,
-input,
-select,
-textarea {
-    color: #222;
+@charset "UTF-8";
+/* line 1, ../sass/main.scss */
+body {
+  min-height: 2000px;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
 }
 
-html {
-    font-size: 1em;
-    line-height: 1.4;
+/* line 8, ../sass/main.scss */
+* {
+  box-sizing: inherit;
 }
 
-::-moz-selection {
-    background: #b3d4fc;
-    text-shadow: none;
+/* line 12, ../sass/main.scss */
+section {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
 }
 
-::selection {
-    background: #b3d4fc;
-    text-shadow: none;
+/* line 19, ../sass/main.scss */
+.spacer {
+  margin-top: 0.25vh;
+  width: 100%;
 }
 
-hr {
-    display: block;
-    height: 1px;
-    border: 0;
-    border-top: 1px solid #ccc;
-    margin: 1em 0;
-    padding: 0;
+/* line 24, ../sass/main.scss */
+.trigger {
+  width: 100%;
+  height: 1px;
+  background: red;
 }
 
-audio,
-canvas,
-img,
-video {
-    vertical-align: middle;
+/* line 32, ../sass/main.scss */
+#hello .name-tag {
+  position: relative;
+  left: 50%;
+  margin-left: -300px;
+  width: 600px;
+  top: 40%;
+  margin-top: -175px;
+  height: 350px;
+  box-shadow: 1px 5px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 25px;
+  border: 5px solid red;
+  overflow: hidden;
+}
+/* line 49, ../sass/main.scss */
+#hello .name-tag header {
+  background-color: red;
+  font-size: 25px;
+}
+/* line 52, ../sass/main.scss */
+#hello .name-tag header h1, #hello .name-tag header h2 {
+  color: #fff;
+  margin: 0;
+  padding: 5px;
+  text-align: center;
+}
+/* line 60, ../sass/main.scss */
+#hello .name-tag .name-wrapper {
+  width: 100%;
+  text-align: center;
+}
+/* line 65, ../sass/main.scss */
+#hello .name-tag .name-wrapper .name {
+  margin-top: 2em;
+  position: absolute;
+  width: 100%;
+  overflow: hidden;
+}
+/* line 72, ../sass/main.scss */
+#hello .name-tag .name-wrapper .letter {
+  font-size: 140px;
+  display: inline-block;
+  position: relative;
+  top: 2em;
 }
 
-fieldset {
-    border: 0;
-    margin: 0;
-    padding: 0;
+/* line 82, ../sass/main.scss */
+#build {
+  background: #94D0BC;
+}
+/* line 86, ../sass/main.scss */
+#build .gears {
+  padding-top: 25vh;
+  text-align: center;
+}
+/* line 91, ../sass/main.scss */
+#build .gear {
+  width: 25vh;
+  height: 25vh;
+  margin-right: -6.5vh;
+  background-size: 100%;
+  display: inline-block;
+}
+/* line 98, ../sass/main.scss */
+#build .gear:nth-child(2n) {
+  transform: rotate(22deg);
+}
+/* line 102, ../sass/main.scss */
+#build .gear:last-child {
+  margin-right: 0;
+}
+/* line 107, ../sass/main.scss */
+#build .gear path {
+  fill: #C4E0AC;
+}
+/* line 112, ../sass/main.scss */
+#build .copy {
+  width: 100%;
+  left: -150%;
+  position: absolute;
+  text-align: center;
+  line-height: 25vh;
+  font-size: 15vh;
+  white-space: nowrap;
+}
+/* line 122, ../sass/main.scss */
+#build .container {
+  max-height: 750px;
 }
 
-textarea {
-    resize: vertical;
+/* line 127, ../sass/main.scss */
+#responsive {
+  min-height: 10000px;
+  position: relative;
 }
-
-.browsehappy {
-    margin: 0.2em 0;
-    background: #ccc;
-    color: #000;
-    padding: 0.2em 0;
+/* line 135, ../sass/main.scss */
+#responsive .webpage-wrapper {
+  position: absolute;
 }
-
-
-/* ==========================================================================
-   Author's custom styles
-   ========================================================================== */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* ==========================================================================
-   Media Queries
-   ========================================================================== */
-
-@media only screen and (min-width: 35em) {
-
+/* line 139, ../sass/main.scss */
+#responsive .webpage {
+  position: absolute;
+  border: 2px solid black;
+  width: 50vw;
+  height: 450px;
+  background-color: #CBE9FC;
+  overflow: hidden;
+  box-sizing: border-box;
+  transform-origin: 0 0 0;
+  transition: border-radius 0.5s ease;
 }
-
-@media print,
-       (-o-min-device-pixel-ratio: 5/4),
-       (-webkit-min-device-pixel-ratio: 1.25),
-       (min-resolution: 120dpi) {
-
+/* line 153, ../sass/main.scss */
+#responsive .webpage .container {
+  margin: 0 auto;
+  width: 100%;
+  background-color: #fff;
+  max-width: 400px;
+  padding: 2%;
+  box-shadow: 0px 0px 10px -2px #000;
+  text-align: center;
+  transition: padding 0.5s ease;
 }
-
-/* ==========================================================================
-   Helper classes
-   ========================================================================== */
-
-.ir {
-    background-color: transparent;
-    border: 0;
-    overflow: hidden;
-    *text-indent: -9999px;
+/* line 164, ../sass/main.scss */
+#responsive .webpage .logo {
+  background-color: #88BEBE;
+  height: 100px;
+  width: 100%;
 }
-
-.ir:before {
-    content: "";
-    display: block;
-    width: 0;
-    height: 150%;
+/* line 170, ../sass/main.scss */
+#responsive .webpage ul.menu {
+  list-style: none;
+  height: 30px;
+  margin: 5% 1%;
+  padding: 0;
 }
-
-.hidden {
-    display: none !important;
-    visibility: hidden;
+/* line 177, ../sass/main.scss */
+#responsive .webpage ul.menu li {
+  width: 15%;
+  height: 100%;
+  background: #6E96BB;
+  display: inline-block;
 }
-
-.visuallyhidden {
-    border: 0;
-    clip: rect(0 0 0 0);
-    height: 1px;
-    margin: -1px;
-    overflow: hidden;
-    padding: 0;
-    position: absolute;
-    width: 1px;
+/* line 185, ../sass/main.scss */
+#responsive .webpage .box {
+  width: 100px;
+  height: 100px;
+  background-color: #F0D9B4;
+  display: inline-block;
+  margin-right: 1%;
+  margin-left: 1%;
 }
-
-.visuallyhidden.focusable:active,
-.visuallyhidden.focusable:focus {
-    clip: auto;
-    height: auto;
-    margin: 0;
-    overflow: visible;
-    position: static;
-    width: auto;
+/* line 194, ../sass/main.scss */
+#responsive .webpage .text {
+  padding: 5% 20%;
 }
-
-.invisible {
-    visibility: hidden;
+/* line 198, ../sass/main.scss */
+#responsive .webpage .row-text {
+  padding-top: 5%;
+  border-bottom: 2px solid #898266;
 }
-
-.clearfix:before,
-.clearfix:after {
-    content: " ";
-    display: table;
+/* line 205, ../sass/main.scss */
+#responsive .webpage.ipad-width .container {
+  padding-top: 32px;
 }
-
-.clearfix:after {
-    clear: both;
+/* line 209, ../sass/main.scss */
+#responsive .webpage.ipad-width .logo {
+  height: 50px;
 }
-
-.clearfix {
-    *zoom: 1;
+/* line 212, ../sass/main.scss */
+#responsive .webpage.ipad-width ul.menu {
+  height: 15px;
 }
-
-/* ==========================================================================
-   Print styles
-   ========================================================================== */
-
-@media print {
-    * {
-        background: transparent !important;
-        color: #000 !important;
-        box-shadow: none !important;
-        text-shadow: none !important;
-    }
-
-    a,
-    a:visited {
-        text-decoration: underline;
-    }
-
-    a[href]:after {
-        content: " (" attr(href) ")";
-    }
-
-    abbr[title]:after {
-        content: " (" attr(title) ")";
-    }
-
-    .ir a:after,
-    a[href^="javascript:"]:after,
-    a[href^="#"]:after {
-        content: "";
-    }
-
-    pre,
-    blockquote {
-        border: 1px solid #999;
-        page-break-inside: avoid;
-    }
-
-    thead {
-        display: table-header-group;
-    }
-
-    tr,
-    img {
-        page-break-inside: avoid;
-    }
-
-    img {
-        max-width: 100% !important;
-    }
-
-    @page {
-        margin: 0.5cm;
-    }
-
-    p,
-    h2,
-    h3 {
-        orphans: 3;
-        widows: 3;
-    }
-
-    h2,
-    h3 {
-        page-break-after: avoid;
-    }
+/* line 218, ../sass/main.scss */
+#responsive .webpage.imac-width .container {
+  padding-top: 36px;
+}
+/* line 223, ../sass/main.scss */
+#responsive .webpage.iphone-width {
+  border-radius: 10px;
+}
+/* line 227, ../sass/main.scss */
+#responsive .webpage.iphone-width .logo {
+  height: 50px;
+}
+/* line 229, ../sass/main.scss */
+#responsive .webpage.iphone-width .logo:after {
+  display: inline-block;
+  float: right;
+  content: '☰';
+  margin-top: 1.5em;
+  margin-right: 10px;
+  font-size: 1.1em;
+  color: #fff;
+}
+/* line 240, ../sass/main.scss */
+#responsive .webpage.iphone-width .box {
+  display: none;
+}
+/* line 244, ../sass/main.scss */
+#responsive .webpage.iphone-width ul.menu {
+  display: none;
+}
+/* line 249, ../sass/main.scss */
+#responsive .webpage.ipad-width, #responsive .webpage.imac-width {
+  border-radius: 10px;
+}
+/* line 254, ../sass/main.scss */
+#responsive .ipad-wrapper, #responsive .imac-wrapper, #responsive .iphone-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+/* line 260, ../sass/main.scss */
+#responsive .imac {
+  width: 690px;
+  height: 420px;
+  border: 32px solid #3b404a;
+  content: '';
+  display: block;
+  position: relative;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  transform-origin: 0 0 0;
+}
+/* line 272, ../sass/main.scss */
+#responsive .imac:after {
+  width: 690px;
+  position: absolute;
+  top: 388px;
+  height: 70px;
+  background: #e8eaef;
+  display: block;
+  content: '';
+  left: -32px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+/* line 287, ../sass/main.scss */
+#responsive .ipad {
+  border-radius: 10px;
+  background: transparent;
+  width: 240px;
+  border-left: 16px solid #3b404a;
+  border-right: 16px solid #3b404a;
+  height: 320px;
+  border-top: 36px solid #3b404a;
+  border-bottom: 36px solid #3b404a;
+  box-sizing: border-box;
+  transform-origin: 0 0 0;
+}
+/* line 303, ../sass/main.scss */
+#responsive .iphone {
+  width: 104px;
+  height: 184px;
+  border-left: 8px solid #3b404a;
+  border-right: 8px solid #3b404a;
+  border-top: 32px solid #3b404a;
+  border-bottom: 32px solid #3b404a;
+  border-radius: 10px;
+  box-sizing: border-box;
+  transform-origin: 0 0 0;
+}
+/* line 316, ../sass/main.scss */
+#responsive .copy {
+  border: 2px solid #6E96BB;
+  color: #6E96BB;
+  padding: 2em;
+  width: 350px;
+  position: fixed;
+  right: 150px;
+  top: 100px;
+  font-size: 22px;
+  text-align: center;
 }
