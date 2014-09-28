@@ -134,7 +134,6 @@ $(function(){
 		.add(TweenMax.to($('.webpage'), 1, {css:{ className: '+=iphone-width' }}), 7000)
 		.add(TweenMax.to($('.webpage'), 1, { opacity: 0 }), 8500)
 		.add(TweenMax.to($('.iphone-wrapper'), 500, { opacity: 0 }), 8500);
-		.add(TweenMax.to($('.ipad'), 2000, {}))
 
 
 	var responsive = new ScrollScene({

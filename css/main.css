@@ -201,23 +201,23 @@ section {
 #responsive .webpage.ipad-width .logo {
   height: 50px;
 }
-/* line 212, ../sass/main.scss */
+/* line 213, ../sass/main.scss */
 #responsive .webpage.ipad-width ul.menu {
   height: 15px;
 }
-/* line 218, ../sass/main.scss */
+/* line 219, ../sass/main.scss */
 #responsive .webpage.imac-width .container {
   padding-top: 36px;
 }
-/* line 223, ../sass/main.scss */
+/* line 224, ../sass/main.scss */
 #responsive .webpage.iphone-width {
   border-radius: 10px;
 }
-/* line 227, ../sass/main.scss */
+/* line 228, ../sass/main.scss */
 #responsive .webpage.iphone-width .logo {
   height: 50px;
 }
-/* line 229, ../sass/main.scss */
+/* line 230, ../sass/main.scss */
 #responsive .webpage.iphone-width .logo:after {
   display: inline-block;
   float: right;
@@ -227,25 +227,25 @@ section {
   font-size: 1.1em;
   color: #fff;
 }
-/* line 240, ../sass/main.scss */
+/* line 241, ../sass/main.scss */
 #responsive .webpage.iphone-width .box {
-  display: none;
+  height: 20px;
 }
-/* line 244, ../sass/main.scss */
+/* line 245, ../sass/main.scss */
 #responsive .webpage.iphone-width ul.menu {
   display: none;
 }
-/* line 249, ../sass/main.scss */
+/* line 250, ../sass/main.scss */
 #responsive .webpage.ipad-width, #responsive .webpage.imac-width {
   border-radius: 10px;
 }
-/* line 254, ../sass/main.scss */
+/* line 255, ../sass/main.scss */
 #responsive .ipad-wrapper, #responsive .imac-wrapper, #responsive .iphone-wrapper {
   position: fixed;
   top: 0;
   left: 0;
 }
-/* line 260, ../sass/main.scss */
+/* line 261, ../sass/main.scss */
 #responsive .imac {
   width: 690px;
   height: 420px;
@@ -257,7 +257,7 @@ section {
   border-top-right-radius: 10px;
   transform-origin: 0 0 0;
 }
-/* line 272, ../sass/main.scss */
+/* line 273, ../sass/main.scss */
 #responsive .imac:after {
   width: 690px;
   position: absolute;
@@ -270,7 +270,7 @@ section {
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
 }
-/* line 287, ../sass/main.scss */
+/* line 288, ../sass/main.scss */
 #responsive .ipad {
   border-radius: 10px;
   background: transparent;
@@ -283,7 +283,7 @@ section {
   box-sizing: border-box;
   transform-origin: 0 0 0;
 }
-/* line 303, ../sass/main.scss */
+/* line 304, ../sass/main.scss */
 #responsive .iphone {
   width: 104px;
   height: 184px;
@@ -295,7 +295,7 @@ section {
   box-sizing: border-box;
   transform-origin: 0 0 0;
 }
-/* line 316, ../sass/main.scss */
+/* line 317, ../sass/main.scss */
 #responsive .copy {
   border: 2px solid #6E96BB;
   color: #6E96BB;
