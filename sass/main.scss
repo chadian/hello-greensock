@@ -14,9 +14,6 @@ section {
 	height: 100vh;
 	overflow: hidden; // contain scenes
 	position: relative;
-
-	max-width: 1600px;
-	margin: auto;
 }
 
 .spacer {
@@ -338,4 +335,34 @@ section {
 		}
 	}
 
+}
+
+#tools {
+
+	background-image: image-url('goldengate.jpg');
+	background-position: middle;
+	background-size: cover;
+
+	.tool-logo {
+		width: 150px;
+		position: absolute;
+		border: 5px solid rgba(#000, 0.2);
+		padding: 0.5em;
+		border-radius: 50%;
+		background: #fff;
+	}
+
+	.copy {
+		width: 450px;
+		height: 200px;
+		margin-bottom: 50px;
+		position: absolute;
+		right: 150px;
+		top: 150px;
+		margin-left: -225px;
+		font-size: 2em;
+		margin-top: -100px;
+		display: table-cell;
+		vertical-align: middle;
+	}
 }

@@ -9,14 +9,7 @@ $(function(){
 */
 
 	var helloTween = new TimelineMax()
-			.add(TweenMax.staggerTo(
-				'.letter',
-				10,
-				{
-					css: { top: 0 }
-				},
-				5
-			))
+			.add(TweenMax.staggerTo('.letter', 10, {top: 0}, 5))
 			.add(TweenMax.to('', 25, {}))
 
 	var hello = new ScrollScene({
@@ -131,12 +124,84 @@ $(function(){
 
 
 	var responsive = new ScrollScene({
-		duration: 8000,
+		duration: 10000,
 		triggerElement: $('.trigger.responsive'),
 		triggerHook: 0
 	})
 	.setPin('.webpage-wrapper')
 	.setTween(responsiveTween)
+	.addTo(controller)
+	.addIndicators();
+
+/*
+
+	'Tools' scene
+
+*/
+
+	var toolsTween = new TimelineMax();
+
+	var toolsList = [
+		'ember', 'jquery', 'vagrant', 'php', 'drupal', 'wordpress', 'css3', 'html5', 'js',
+		'foundation', 'polymer', 'symfony', 'grunt', 'gulp', 'twig', 'npm', 'apache', 'smacss',
+		'virtualbox', 'mac', 'sublime', 'phpstorm', 'sass', 'compass', 'git', 'mysql', 'xscope',
+		'alfred', 'iterm', 'chrome', 'firefox', 'ie', 'greensock', 'magento', 'bower', 'yeo'
+	];
+
+	var getRandomCoordinates = function(offscreen) {
+		
+		var offscreen = offscreen || false;
+
+		var xLimits = {
+			min: 0,
+			max: 1200
+		}
+
+		var yLimits = {
+			min: 0,
+			max: 600
+		}
+
+		var x = Math.floor(Math.random() * (xLimits.max - xLimits.min)) + xLimits.min;
+		var y = Math.floor(Math.random() * (yLimits.max - yLimits.min)) + yLimits.min;
+
+		console.log(x);
+
+		if (offscreen) {
+			y = '-500';
+		}
+
+		console.log({ x: x, y: y });
+
+		return { x: x, y: y }
+	}
+	
+	var tweenDuration = 500;
+	var currentStart = 2000;
+	var pause = 500;
+
+	while (toolsList.length != 0) {
+		var pickedIndex = Math.floor((Math.random() * toolsList.length));
+		var removed = toolsList.splice(pickedIndex, 1);
+		var coords = getRandomCoordinates();
+		var offscreenCoords = getRandomCoordinates(true);
+
+		var img = new Image();
+		img.src = "img/tools/" + removed[0] + ".png";
+		img.className = 'tool-logo';
+		document.getElementById('tools').appendChild(img);
+
+		toolsTween.add(TweenMax.fromTo(img, tweenDuration, {x: offscreenCoords.x, y: offscreenCoords.y}, {x: coords.x, y: coords.y}), currentStart);
+		currentStart += tweenDuration + pause;
+	}
+
+	var tools = new ScrollScene({
+		duration: 25000,
+		triggerElement: '#tools',
+		triggerHook: 0
+	})
+	.setPin('#tools')
+	.setTween(toolsTween)
 	.addTo(controller)
 	.addIndicators();
 

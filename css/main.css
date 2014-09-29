@@ -18,24 +18,22 @@ section {
   height: 100vh;
   overflow: hidden;
   position: relative;
-  max-width: 1600px;
-  margin: auto;
 }
 
-/* line 22, ../sass/main.scss */
+/* line 19, ../sass/main.scss */
 .spacer {
   margin-top: 0.25vh;
   width: 100%;
 }
 
-/* line 27, ../sass/main.scss */
+/* line 24, ../sass/main.scss */
 .trigger {
   width: 100%;
   height: 1px;
   background: red;
 }
 
-/* line 35, ../sass/main.scss */
+/* line 32, ../sass/main.scss */
 #hello .name-tag {
   position: relative;
   left: 50%;
@@ -49,31 +47,31 @@ section {
   border: 5px solid red;
   overflow: hidden;
 }
-/* line 52, ../sass/main.scss */
+/* line 49, ../sass/main.scss */
 #hello .name-tag header {
   background-color: red;
   font-size: 25px;
 }
-/* line 55, ../sass/main.scss */
+/* line 52, ../sass/main.scss */
 #hello .name-tag header h1, #hello .name-tag header h2 {
   color: #fff;
   margin: 0;
   padding: 5px;
   text-align: center;
 }
-/* line 63, ../sass/main.scss */
+/* line 60, ../sass/main.scss */
 #hello .name-tag .name-wrapper {
   width: 100%;
   text-align: center;
 }
-/* line 68, ../sass/main.scss */
+/* line 65, ../sass/main.scss */
 #hello .name-tag .name-wrapper .name {
   margin-top: 2em;
   position: absolute;
   width: 100%;
   overflow: hidden;
 }
-/* line 75, ../sass/main.scss */
+/* line 72, ../sass/main.scss */
 #hello .name-tag .name-wrapper .letter {
   font-size: 140px;
   display: inline-block;
@@ -81,16 +79,16 @@ section {
   top: 2em;
 }
 
-/* line 85, ../sass/main.scss */
+/* line 82, ../sass/main.scss */
 #build {
   background: #94D0BC;
 }
-/* line 89, ../sass/main.scss */
+/* line 86, ../sass/main.scss */
 #build .gears {
   padding-top: 25vh;
   text-align: center;
 }
-/* line 94, ../sass/main.scss */
+/* line 91, ../sass/main.scss */
 #build .gear {
   width: 25vh;
   height: 25vh;
@@ -98,19 +96,19 @@ section {
   background-size: 100%;
   display: inline-block;
 }
-/* line 101, ../sass/main.scss */
+/* line 98, ../sass/main.scss */
 #build .gear:nth-child(2n) {
   transform: rotate(22deg);
 }
-/* line 105, ../sass/main.scss */
+/* line 102, ../sass/main.scss */
 #build .gear:last-child {
   margin-right: 0;
 }
-/* line 110, ../sass/main.scss */
+/* line 107, ../sass/main.scss */
 #build .gear path {
   fill: #C4E0AC;
 }
-/* line 115, ../sass/main.scss */
+/* line 112, ../sass/main.scss */
 #build .copy {
   width: 100%;
   left: -150%;
@@ -120,21 +118,21 @@ section {
   font-size: 15vh;
   white-space: nowrap;
 }
-/* line 125, ../sass/main.scss */
+/* line 122, ../sass/main.scss */
 #build .container {
   max-height: 750px;
 }
 
-/* line 130, ../sass/main.scss */
+/* line 127, ../sass/main.scss */
 #responsive {
   min-height: 10000px;
   position: relative;
 }
-/* line 138, ../sass/main.scss */
+/* line 135, ../sass/main.scss */
 #responsive .webpage-wrapper {
   position: absolute;
 }
-/* line 142, ../sass/main.scss */
+/* line 139, ../sass/main.scss */
 #responsive .webpage {
   position: absolute;
   border: 2px solid black;
@@ -146,7 +144,7 @@ section {
   transform-origin: 0 0 0;
   transition: border-radius 0.5s ease;
 }
-/* line 156, ../sass/main.scss */
+/* line 153, ../sass/main.scss */
 #responsive .webpage .container {
   margin: 0 auto;
   width: 100%;
@@ -157,27 +155,27 @@ section {
   text-align: center;
   transition: padding 0.5s ease;
 }
-/* line 167, ../sass/main.scss */
+/* line 164, ../sass/main.scss */
 #responsive .webpage .logo {
   background-color: #88BEBE;
   height: 100px;
   width: 100%;
 }
-/* line 173, ../sass/main.scss */
+/* line 170, ../sass/main.scss */
 #responsive .webpage ul.menu {
   list-style: none;
   height: 30px;
   margin: 5% 1%;
   padding: 0;
 }
-/* line 180, ../sass/main.scss */
+/* line 177, ../sass/main.scss */
 #responsive .webpage ul.menu li {
   width: 15%;
   height: 100%;
   background: #6E96BB;
   display: inline-block;
 }
-/* line 188, ../sass/main.scss */
+/* line 185, ../sass/main.scss */
 #responsive .webpage .box {
   width: 100px;
   height: 100px;
@@ -186,40 +184,40 @@ section {
   margin-right: 1%;
   margin-left: 1%;
 }
-/* line 197, ../sass/main.scss */
+/* line 194, ../sass/main.scss */
 #responsive .webpage .text {
   padding: 5% 20%;
 }
-/* line 201, ../sass/main.scss */
+/* line 198, ../sass/main.scss */
 #responsive .webpage .row-text {
   padding-top: 5%;
   border-bottom: 2px solid #898266;
 }
-/* line 208, ../sass/main.scss */
+/* line 205, ../sass/main.scss */
 #responsive .webpage.ipad-width .container {
   padding-top: 32px;
 }
-/* line 212, ../sass/main.scss */
+/* line 209, ../sass/main.scss */
 #responsive .webpage.ipad-width .logo {
   height: 50px;
 }
-/* line 216, ../sass/main.scss */
+/* line 213, ../sass/main.scss */
 #responsive .webpage.ipad-width ul.menu {
   height: 15px;
 }
-/* line 222, ../sass/main.scss */
+/* line 219, ../sass/main.scss */
 #responsive .webpage.imac-width .container {
   padding-top: 36px;
 }
-/* line 227, ../sass/main.scss */
+/* line 224, ../sass/main.scss */
 #responsive .webpage.iphone-width {
   border-radius: 10px;
 }
-/* line 231, ../sass/main.scss */
+/* line 228, ../sass/main.scss */
 #responsive .webpage.iphone-width .logo {
   height: 50px;
 }
-/* line 233, ../sass/main.scss */
+/* line 230, ../sass/main.scss */
 #responsive .webpage.iphone-width .logo:after {
   display: inline-block;
   float: right;
@@ -229,25 +227,25 @@ section {
   font-size: 1.1em;
   color: #fff;
 }
-/* line 244, ../sass/main.scss */
+/* line 241, ../sass/main.scss */
 #responsive .webpage.iphone-width .box {
   height: 20px;
 }
-/* line 248, ../sass/main.scss */
+/* line 245, ../sass/main.scss */
 #responsive .webpage.iphone-width ul.menu {
   display: none;
 }
-/* line 253, ../sass/main.scss */
+/* line 250, ../sass/main.scss */
 #responsive .webpage.ipad-width, #responsive .webpage.imac-width {
   border-radius: 10px;
 }
-/* line 258, ../sass/main.scss */
+/* line 255, ../sass/main.scss */
 #responsive .ipad-wrapper, #responsive .imac-wrapper, #responsive .iphone-wrapper {
   position: fixed;
   top: 0;
   left: 0;
 }
-/* line 264, ../sass/main.scss */
+/* line 261, ../sass/main.scss */
 #responsive .imac {
   width: 690px;
   height: 420px;
@@ -259,7 +257,7 @@ section {
   border-top-right-radius: 10px;
   transform-origin: 0 0 0;
 }
-/* line 276, ../sass/main.scss */
+/* line 273, ../sass/main.scss */
 #responsive .imac:after {
   width: 690px;
   position: absolute;
@@ -272,7 +270,7 @@ section {
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
 }
-/* line 291, ../sass/main.scss */
+/* line 288, ../sass/main.scss */
 #responsive .ipad {
   border-radius: 10px;
   background: transparent;
@@ -285,7 +283,7 @@ section {
   box-sizing: border-box;
   transform-origin: 0 0 0;
 }
-/* line 307, ../sass/main.scss */
+/* line 304, ../sass/main.scss */
 #responsive .iphone {
   width: 104px;
   height: 184px;
@@ -297,7 +295,7 @@ section {
   box-sizing: border-box;
   transform-origin: 0 0 0;
 }
-/* line 320, ../sass/main.scss */
+/* line 317, ../sass/main.scss */
 #responsive .copy {
   border: 2px solid #6E96BB;
   border-radius: 10px;
@@ -308,13 +306,43 @@ section {
   font-size: 22px;
   text-align: center;
 }
-/* line 330, ../sass/main.scss */
+/* line 327, ../sass/main.scss */
 #responsive .copy.intro {
   padding: 2em;
   width: 350px;
 }
-/* line 335, ../sass/main.scss */
+/* line 332, ../sass/main.scss */
 #responsive .copy.on-device {
   padding: 1em;
   width: auto;
+}
+
+/* line 340, ../sass/main.scss */
+#tools {
+  background-image: url('/img/goldengate.jpg?1411971663');
+  background-position: middle;
+  background-size: cover;
+}
+/* line 346, ../sass/main.scss */
+#tools .tool-logo {
+  width: 150px;
+  position: absolute;
+  border: 5px solid rgba(0, 0, 0, 0.2);
+  padding: 0.5em;
+  border-radius: 50%;
+  background: #fff;
+}
+/* line 355, ../sass/main.scss */
+#tools .copy {
+  width: 450px;
+  height: 200px;
+  margin-bottom: 50px;
+  position: absolute;
+  right: 150px;
+  top: 150px;
+  margin-left: -225px;
+  font-size: 2em;
+  margin-top: -100px;
+  display: table-cell;
+  vertical-align: middle;
 }
