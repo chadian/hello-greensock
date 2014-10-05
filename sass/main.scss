@@ -1,8 +1,6 @@
 body {
 	min-height: 2000px;
 	box-sizing: border-box;
-	width: 100%;
-	height: 100%;
 }
 
 * {
@@ -25,6 +23,50 @@ section {
 	width: 100%;
 	height: 1px;
 	background: red;
+}
+
+#title-screen {
+
+	.content-wrapper {
+		padding: 5em;
+		text-align: center;
+	}
+
+	.mind-the-gap {
+
+		display: inline-block;
+		text-align: center;
+		width: 350px;
+
+		.symbol {
+	
+			margin-bottom: 3em;
+			position: relative;
+
+			.circle {
+				border: 60px solid blue;
+				width: 350px;
+				height: 350px;
+				border-radius: 100%;
+			}
+			.line {
+
+				$height-of-line: 80px;
+
+				background: red;		
+				color: #fff;
+				position: absolute;
+				top: 50%;
+				left: -25%;
+				text-align: center;
+				font-size: 2em;
+				line-height: $height-of-line;
+				margin-top: -1 * $height-of-line / 2;
+				height: $height-of-line;
+				width: 150%;
+			}
+		}
+	}
 }
 
 #hello {
@@ -340,7 +382,7 @@ section {
 #tools {
 
 	background-image: image-url('goldengate.jpg');
-	background-position: middle;
+	background-position: center;
 	background-size: cover;
 
 	.tool-logo {

@@ -1,5 +1,10 @@
 $(function(){
 	
+
+	function getLinearGap(desired, current) {
+
+	}
+
 	var controller = new ScrollMagic();
 
 /*
@@ -152,28 +157,25 @@ $(function(){
 		
 		var offscreen = offscreen || false;
 
+		//xLimits and yLimits within 10% to 80% of the available on screen range
 		var xLimits = {
-			min: 0,
-			max: 1200
-		}
+			min: window.innerWidth * 0.1,
+			max: window.innerWidth * 0.8
+		};
 
 		var yLimits = {
-			min: 0,
-			max: 600
-		}
+			min: window.innerHeight * 0.1,
+			max: window.innerHeight * 0.8
+		};
 
 		var x = Math.floor(Math.random() * (xLimits.max - xLimits.min)) + xLimits.min;
 		var y = Math.floor(Math.random() * (yLimits.max - yLimits.min)) + yLimits.min;
-
-		console.log(x);
 
 		if (offscreen) {
 			y = '-500';
 		}
 
-		console.log({ x: x, y: y });
-
-		return { x: x, y: y }
+		return { x: x, y: y };
 	}
 	
 	var tweenDuration = 500;
