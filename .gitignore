@@ -16,6 +16,8 @@ local.json
 
 .settings/
 
+css/*
+
 bower_components/
 website/Documentation/
 node_modules/

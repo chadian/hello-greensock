@@ -22,7 +22,7 @@ section {
 .trigger {
 	width: 100%;
 	height: 1px;
-	background: red;
+	background: transparent;
 }
 
 #title-screen {
@@ -44,7 +44,7 @@ section {
 			position: relative;
 
 			.circle {
-				border: 60px solid blue;
+				border: 60px solid red;
 				width: 350px;
 				height: 350px;
 				border-radius: 100%;
@@ -53,7 +53,7 @@ section {
 
 				$height-of-line: 80px;
 
-				background: red;		
+				background: blue;
 				color: #fff;
 				position: absolute;
 				top: 50%;
@@ -124,6 +124,7 @@ section {
 #build {
 
 	background: #94D0BC;
+	font-family: Futura, "Trebuchet MS", Arial, sans-serif;
 
 	.gears {
 		padding-top: 25vh;
@@ -384,6 +385,23 @@ section {
 	background-image: image-url('goldengate.jpg');
 	background-position: center;
 	background-size: cover;
+
+	figure {
+
+		padding: 1em;
+		background: white;
+		border-radius: 5px;
+
+		blockquote {
+			margin: 0;
+			padding: 0;
+		}
+
+		em {
+			display: inline-block;
+			margin-top: 0.5em;
+		}
+	}
 
 	.tool-logo {
 		width: 150px;

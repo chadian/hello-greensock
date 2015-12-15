@@ -1,11 +1,28 @@
 $(function(){
+
+var controller = new ScrollMagic();
 	
+/*
 
-	function getLinearGap(desired, current) {
+	'Title' scene
 
-	}
+*/
 
-	var controller = new ScrollMagic();
+	// function getEdgeGaps(desired, current) {
+	// 	var difference = desired - current;
+	// 	return parseInt(difference / 2);
+	// }
+
+	// function calcNeededScreenChange() {
+	// 	var verticalGaps = getEdgeGaps(680, window.innerHeight);
+	// 	var horizontalGaps = getEdgeGaps(1370, window.innerHeight);
+
+	// 	vDirection = (verticalGaps > 0)
+	// 	$('#title-screen .v-direction').
+	// }();
+
+	// $(window).on('resize', function(e){
+	// });
 
 /*
 
@@ -24,8 +41,8 @@ $(function(){
 	})
 	.setPin('#hello')
 	.setTween(helloTween)
-	.addTo(controller)
-	.addIndicators();
+	.addTo(controller);
+	// .addIndicators();
 
 /*
 
@@ -56,8 +73,8 @@ $(function(){
 	})
 	.setPin('#build')
 	.setTween(buildTween)
-	.addTo(controller)
-	.addIndicators();
+	.addTo(controller);
+	// .addIndicators();
 
 
 /*
@@ -135,8 +152,8 @@ $(function(){
 	})
 	.setPin('.webpage-wrapper')
 	.setTween(responsiveTween)
-	.addTo(controller)
-	.addIndicators();
+	.addTo(controller);
+	// .addIndicators();
 
 /*
 
@@ -204,7 +221,7 @@ $(function(){
 	})
 	.setPin('#tools')
 	.setTween(toolsTween)
-	.addTo(controller)
-	.addIndicators();
+	.addTo(controller);
+	// .addIndicators();
 
 });
